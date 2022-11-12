@@ -1,0 +1,30 @@
+/**
+ * -------------------------------------------------------------------------
+ *  Google fonts served locally.
+ * -------------------------------------------------------------------------
+ */
+
+ @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Plus Jakarta Sans Regular'),
+         url(fonts/PlusJakartaSans-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Plus Jakarta Sans Italic'),
+         url(fonts/PlusJakartaSans-Italic.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Plus Jakarta Sans Bold'),
+         local('PlusJakartaSans-Bold'),
+         url(fonts/PlusJakartaSans-Bold.ttf) format('truetype');
+  }
