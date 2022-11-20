@@ -1,0 +1,24 @@
+{% extends "base.ibis" %}
+
+        {% block body-content %}
+        <header class="page">
+            <h1 class="logo"><a href="@root/">{{ site.title }}</a></h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="@root/about//">About</a></li>
+                    <li><a href="@root/blog//">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <header class="title">
+                <h1>{{ node.title }}</h1>
+                {% if node.subtitle %}
+                    <p class="subtitle">{{ node.subtitle }}</p>
+                {% endif %}
+                <hr>
+            </header>
+            {{ node.html }}
+        </article>
+        <footer></footer>
+        {% endblock %}
