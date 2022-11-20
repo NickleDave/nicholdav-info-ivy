@@ -10,7 +10,5 @@
 theme = "l2m"
 
 # Site title.
-title = "Lifelong Learning Machine"
+title = "nicholdav.info"
 
-# Site tagline.
-# tagline = "Just another Ivy site."
