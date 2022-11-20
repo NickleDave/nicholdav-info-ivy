@@ -259,75 +259,37 @@ body {
     background-color: #ffece8;
 }
 
-.masthead {
-    width: 360px;
-    padding: 20px 50px;
-    float: left;
-}
-
 .main {
     width: 600px;
     padding: 32px 50px 40px 50px;
-    margin-left: 360px;
-    border-left: 3px solid black;
     min-height: calc(100vh - 80px);
 }
 
-/**
- * -------------------------------------------------------------------------
- *  Masthead
- * -------------------------------------------------------------------------
- */
-
-.masthead h1 {
-    margin-top: 0;
-    margin-bottom: 34px;
-    padding: 0;
-    text-align: right;
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 58px;
+header.index {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.masthead h1 a {
-    border-bottom: none;
+header.page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.masthead .tagline {
-    font-style: italic;
-    text-align: right;
+.logo {
+    margin-right: auto;
 }
 
-.masthead .version {
-    font-style: italic;
-    text-align: right;
-}
-
-.masthead .menu {
-    margin-right: 20px;
-    direction: rtl;
-}
-
-.masthead .menu a {
-    direction: ltr;
-}
-
-.masthead .menu ul ul {
+.nav-links {
     list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.masthead .menu li li::before {
-    content: "•\00a\000a0\00a0"
-}
-
-#menu-check {
-    display: none;
-}
-
-#menu-label {
-    display: none;
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 /**
