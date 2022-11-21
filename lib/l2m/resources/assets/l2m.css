@@ -215,7 +215,6 @@ a {
     color: #ce6868;
     text-decoration: underline;
     padding-bottom: 2px;
-    border-bottom: 1px solid;
 }
 
 a:hover {
@@ -275,12 +274,14 @@ header.index {
 header.page {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
     padding: 30px 10%;
 }
 
-.logo {
+h1.logo {
+    margin: 0;  /* override default h1 margin */
     margin-right: auto;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -494,140 +495,12 @@ body.extra-deflist-vspace dt {
         padding-top: 60px;
     }
 
-    .masthead {
-        width: auto;
-        float: none;
-        padding: 60px 20px 60px 20px;
-        text-align: center;
-        margin-left: 40px;
-        margin-right: 40px;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-    }
-
     .main {
         width: auto;
         padding: 40px 40px;
         margin-left: 0;
         border-left: none;
         min-height: auto;
-    }
-
-    .masthead h1 {
-        text-align: center;
-    }
-
-    .masthead .tagline {
-        text-align: center;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-        display: none;
-    }
-
-    .homepage .masthead .tagline {
-        display: block;
-    }
-
-    .masthead .version {
-        text-align: center;
-    }
-
-    .masthead .menu {
-        direction: ltr;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .masthead .menu ul {
-        text-align: left;
-        margin: 0;
-        padding: 0;
-    }
-
-    .masthead .menu ul ul {
-        margin: 0;
-    }
-
-    .masthead .menu li {
-        border-bottom: 1px solid;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .masthead .menu li:first-child {
-        border-top: 1px solid;
-    }
-
-    .masthead .menu li li:last-child {
-        border-bottom: none;
-    }
-
-    .masthead .menu a {
-        display: block;
-        padding: 15px 20px;
-        border-bottom: none;
-    }
-
-    .masthead .menu li li a {
-        padding-left: 30px;
-    }
-
-    .masthead .menu li li::before {
-        content: none;
-    }
-
-    .masthead .menu li li a::before {
-        content: "•\00a0\00a0\00a0";
-    }
-
-    #menu-label {
-        display: inline-block;
-        padding: 0 20px;
-        height: 50px;
-        border: 1px solid #ddd;
-        cursor: pointer;
-        line-height: 50px;
-        color: #333;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    #menu-label:hover, #menu-label:focus {
-        border: 1px solid #888;
-    }
-
-    #menu-label .icon {
-        padding-right: 8px;
-        width: 30px;
-    }
-
-    #menu-check ~ label .close-icon {
-        display: none;
-    }
-
-    #menu-check ~ label .open-icon {
-        display: inline-block;
-    }
-
-    #menu-check:checked ~ label .close-icon {
-        display: inline-block;
-    }
-
-    #menu-check:checked ~ label .open-icon {
-        display: none;
-    }
-
-    #menu-check ~ ul {
-        display: none;
-    }
-
-    #menu-check:checked ~ ul {
-        display: block;
-        margin-top: 50px;
-        margin-bottom: 0;
     }
 }
 
