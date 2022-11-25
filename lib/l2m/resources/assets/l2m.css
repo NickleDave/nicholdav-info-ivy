@@ -252,10 +252,25 @@ img {
  */
 
 body {
-    width: 960px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     background-color: #ffece8;
 }
+
+.nav-links {
+    list-style: none;
+}
+
+ul.nav-links {
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* index specific */
 
 header.index {
     display: flex;
@@ -263,27 +278,25 @@ header.index {
     align-items: center;
 }
 
-header.page {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    padding: 30px 10%;
-}
-
 h1.logo {
     margin: 0;  /* override default h1 margin */
+    padding: 0px 20px;
     margin-right: auto;
     font-weight: 700;
 }
 
-.nav-links {
-    list-style: none;
+#index-img {
+    margin: 0;
 }
 
-.nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
+/* node-page.ibis specific */
+header.page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+
 }
+
 
 /**
  * Info Boxes
