@@ -254,21 +254,13 @@ img {
 body {
     width: 960px;
     margin: 0 auto;
-    padding: 40px 0;
     background-color: #ffece8;
-}
-
-.main {
-    width: 600px;
-    padding: 32px 50px 40px 50px;
-    min-height: calc(100vh - 80px);
 }
 
 header.index {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
 }
 
 header.page {
@@ -291,30 +283,6 @@ h1.logo {
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
-}
-
-/**
- * -------------------------------------------------------------------------
- *  Main
- * -------------------------------------------------------------------------
- */
-
-.main .title h1 {
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-
-.main .title .subtitle {
-    font-style: italic;
-    text-align: center;
-}
-
-.main .title hr {
-    margin: 50px auto 60px;
-}
-
-.main > :last-child {max-val-acc
-    margin-bottom: 0;
 }
 
 /**
@@ -495,13 +463,6 @@ body.extra-deflist-vspace dt {
         padding-top: 60px;
     }
 
-    .main {
-        width: auto;
-        padding: 40px 40px;
-        margin-left: 0;
-        border-left: none;
-        min-height: auto;
-    }
 }
 
 /* Landscape phone screens and smaller. */
