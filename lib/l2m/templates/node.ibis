@@ -12,7 +12,7 @@
         </header>
         {% block main-content %}
         <main>
-            <img src="@root/images/buddha.jpg" alt="stone buddha">
+            <img id="index-img" src="@root/images/buddha.jpg" alt="stone buddha">
         </main>
         {% endblock %}
         {% endblock %}
