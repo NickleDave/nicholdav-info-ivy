@@ -460,6 +460,38 @@ body.extra-deflist-vspace dt {
     margin-top: 80px;
 }
 
+/* about page */
+
+body.about {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body.about main {
+    overflow-y: auto;
+}
+
+body.about aside {
+    flex: 1 0 10%;
+}
+
+body.about .about-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.author__avatar {
+    display: table-cell;
+    vertical-align: top;
+    width: 36px;
+    height: 36px;
+}
+
+.author__avatar img {
+    max-width: 110px;
+    border-radius: 50%;
+}
+
 /**
  * -------------------------------------------------------------------------
  *  Media Queries
