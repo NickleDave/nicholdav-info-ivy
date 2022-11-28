@@ -1,6 +1,6 @@
 ---
 title: "About me"
-template: node-page
+template: about
 ---
 
 I am currently a machine intelligence engineer with
