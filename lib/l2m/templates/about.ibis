@@ -11,6 +11,7 @@
             <meta name="description" content="{$ node.meta_description.strip() $}">
         {% endif %}
         {{ inc.head }}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     </head>
     <body class="about">
       <header class="index">
@@ -22,50 +23,50 @@
             </ul>
         </nav>
       </header>
-      <div class="about-wrapper">
-        <aside>
-            <div class="sidebar">
-              <div itemscope itemtype="http://schema.org/Person">
-                  <div class="author__avatar">
-                      <img src="images/selfie.jpg" alt="David Aaron Nicholson" itemprop="image">
-                  </div>
-                <div class="author__content">
-                    <h3 class="author__name" itemprop="name">David Aaron Nicholson</h3>
-                    <div class="author__bio" itemprop="description">
-                      <p>Research software engineer</p>
+      <main class="about">
+        <div class="about-wrapper">
+          <aside>
+              <div class="sidebar">
+                <div itemscope itemtype="http://schema.org/Person">
+                    <div class="author__avatar">
+                        <img src="images/selfie.jpg" alt="David Aaron Nicholson" itemprop="image">
                     </div>
-                </div>
-                <div class="author__urls-wrapper">
-                  <button class="btn btn--inverse">Follow</button>
-                  <ul class="author__urls social-icons">
-                      <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Charm City</span>
-                      </li>
-                      <li><a href="mailto:nicholdav@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
-                      <li>
-                        <a href="https://github.com/NickleDave" itemprop="sameAs" rel="nofollow noopener noreferrer">
-                          <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.youtube.com/channel/UCd8Xzg9GbvOaP6Q3ef_7pyg">
-                          <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com/nicholdav" itemprop="sameAs" rel="nofollow noopener noreferrer">
-                          <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
-                        </a>
-                      </li>
-                      <li><a href="https://scholar.google.com/citations?hl=en&user=rs2xJh4AAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-                      <li><a href="https://orcid.org/0000-0002-4261-4719"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
-                  </ul>
-                </div> <!-- author-urls wrapper -->
-              </div><!-- Person -->
-            </div><!-- sidebar -->
-        </aside>
-        <div class="about__inner-wrapper">
-          <main>
+                  <div class="author__content">
+                      <h3 class="author__name" itemprop="name">David Aaron Nicholson</h3>
+                      <div class="author__bio" itemprop="description">
+                        <p>Research software engineer</p>
+                      </div>
+                  </div>
+                  <div class="author__urls-wrapper">
+                    <ul class="author__urls social-icons">
+                        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Charm City</span>
+                        </li>
+                        <li><a href="mailto:nicholdav@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+                        <li>
+                          <a href="https://github.com/NickleDave" itemprop="sameAs" rel="nofollow noopener noreferrer">
+                            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/channel/UCd8Xzg9GbvOaP6Q3ef_7pyg">
+                            <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/nicholdav" itemprop="sameAs" rel="nofollow noopener noreferrer">
+                            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span>
+                          </a>
+                        </li>
+                        <li><a href="https://scholar.google.com/citations?hl=en&user=rs2xJh4AAAAJ&view_op=list_works&sortby=pubdate"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+                        <li><a href="https://orcid.org/0000-0002-4261-4719"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+                    </ul>
+                  </div> <!-- author-urls wrapper -->
+                </div><!-- Person -->
+              </div><!-- sidebar -->
+          </aside>
+          <article class="about">
+            <div class="about__inner-wrapper">
               <header class="title">
                   <h1>{{ node.title }}</h1>
                   {% if node.subtitle %}
@@ -74,8 +75,8 @@
                   <hr>
               </header>
               {{ node.html }}
-          </main>
-        </div><!-- about__inner-wrapper -->
-      </div><!-- about-wrapper -->
+            </div><!-- about__inner-wrapper -->
+          </article>
+        </div><!-- about-wrapper -->
+      </main>
       <footer></footer>
-
